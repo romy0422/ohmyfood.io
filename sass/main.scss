@@ -1,0 +1,40 @@
+@use '../sass/Utils/mixins.scss';
+
+
+.section-resto__hearts, .section-resto__heartr {
+    font-size: 2rem;
+    position: absolute;
+    transform: translateY(-50%);
+    margin-left: 300px;
+    padding-bottom: 50px;
+}
+
+.section-resto__hearts{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    @include mixins.gradiant(1);
+&:hover{
+    opacity: 1;
+}}
+
+.btn-exp{
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    border: none;
+    width: 170px;
+    height: 40px;
+    @include mixins.gradiant(1);
+  
+}
+
+.section-resto__border {
+width: 50%;
+    img{
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}}
