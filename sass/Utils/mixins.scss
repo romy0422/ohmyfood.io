@@ -1,3 +1,7 @@
+@import 'variables.scss';
+
+/*Mixin animation heart*/
+
 @mixin gradiant($opacity) {
     background-image: linear-gradient(
         to top,
@@ -5,3 +9,31 @@
         rgba(255, 121, 218, $opacity)
     );
 }
+
+/*Mixin mobile 768px*/
+
+@mixin mobile-only {
+    @media screen and (max-width:($breakpoints)){
+     grid-template-columns: 1fr;
+    }
+    }
+
+    @mixin general-shadow {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+    }
+
+    @mixin flex($flex-direction, $align-items, $justify-content, $flex-wrap) {
+        display: flex;
+        flex-direction: $flex-direction;
+        align-items: $align-items;
+        justify-content: $justify-content;
+        flex-wrap: $flex-wrap;
+    }
+
+    @mixin hover-shadow {
+        box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+    }
+    
+    @mixin transition-ease {
+        transition: all .3s ease;
+    }

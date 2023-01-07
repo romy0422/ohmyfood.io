@@ -1,0 +1,66 @@
+@import '../Utils/variables.scss';
+@import '../Utils/mixins.scss';
+@import '../Utils/responsives.scss';
+@import '../Utils/extentions.scss';
+
+
+
+
+
+
+#content {
+    position: relative;
+    animation: content-appear 3.5s ease-in-out both;
+}
+
+.section-description {
+    padding: 0 0 50px;
+    background-color: $gray-light;
+    text-align: center;
+
+    &__address {
+        background-color: $gray-medium;
+        font-style: normal;
+        font-weight: 500;
+        padding: 16px;
+        margin-bottom: 35px;
+
+        i {
+            margin-right: 15px;
+        }
+    }
+
+    h1 {
+        font-size: rem(24);
+        font-weight: 700;
+        margin-bottom: rem(20);
+        padding: 0 rem(40);
+    }
+
+    &__description {
+        font-size: rem(18);
+        font-weight: 300;
+        margin-bottom: rem(30);
+        padding: 0 rem(20);
+    }
+}
+
+.explorer {
+    list-style-type: none;
+
+    @media #{$medium-up} {
+        &__list {
+            @include flex(row, center, space-between, wrap)
+        }
+    }
+}
+
+.bloc-card {
+    background-color: $gray-light;
+
+    @media #{$medium-up} {
+        &__list {   
+            @include flex(row, center, space-between, wrap)
+        }
+    }
+}
