@@ -5,8 +5,8 @@
 
 .bloc-card {
     position: relative;
-    border-radius: 1rem;
-    margin-bottom: rem(20);
+    border-radius: 10px;
+    margin-bottom: 20px;
     @include flex(column, normal, normal, nowrap);
     @include general-shadow;
 
