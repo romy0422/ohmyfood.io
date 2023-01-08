@@ -64,7 +64,6 @@
 	animation-delay: 1.0s;
 	animation-fill-mode: both;
   position: fixed;
-  @include mixins.mobile-only;
   &__loader{
    
 	width: 100%;
