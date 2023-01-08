@@ -14,7 +14,7 @@
 /*Mixin mobile 768px*/
 
 @mixin mobile-only {
-    @media screen and (max-width:($breakpoints)){
+    @media screen and (max-width:($medium)){
      grid-template-columns: 1fr;
     }
     }
@@ -37,6 +37,9 @@
     
     @mixin transition-ease {
         transition: all .3s ease;
+        
+		-moz-transition: all .3s ease;
+			
     }
 
     @mixin new{
@@ -48,6 +51,18 @@
         top: 15px;
         right: 15px;
         @include general-shadow;
-       
     }
-
+    @mixin explorer{
+        background: $gray-light;
+    padding: 25px 10px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    @include flex(row, center, flex-start, nowrap);
+    @include general-shadow;
+    @include transition-ease;
+    
+    }
+    

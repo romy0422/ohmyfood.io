@@ -37,7 +37,7 @@
         padding: 0 rem(40);
     }
 
-    &__description {
+    &__p {
         font-size: rem(18);
         font-weight: 300;
         margin-bottom: rem(30);
@@ -50,7 +50,7 @@
 
     @media #{$medium-up} {
         &__list {
-            @include flex(row, center, space-between, wrap)
+            @include flex(column, center, space-between, wrap)
         }
     }
 }
@@ -60,7 +60,7 @@
 
     @media #{$medium-up} {
         &__list {   
-            @include flex(row, center, space-between, wrap)
+            @include flex(column, center, space-between, wrap)
         }
     }
 }

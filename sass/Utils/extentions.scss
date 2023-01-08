@@ -3,37 +3,37 @@
 
 
 %container-sm {
-padding: 1rem;
+padding: 10px;
 
 @media #{$large-up} {
-    padding: 1rem 4rem;
+    padding: 10px 4px;
 }
 
 @media #{$xlarge-up} {
-    padding: 1rem 8rem;
+    padding: 10px 8px;
 }
 }
 
 %container-md {
-padding: rem(20);
+padding: 20px;
 
 @media #{$large-up} {
-    padding: rem(25) 4rem;
+    padding: 25px 4px;
 }
 
 @media #{$xlarge-up} {
-    padding: rem(30) 8rem;
+    padding: 30px 8px;
 }
 }
 
 %container {
-padding: rem(50) rem(20);
+padding: 50px 20px;
 
 @media #{$large-up} {
-    padding: 4rem;
+    padding: 4px
 }
 
 @media #{$xlarge-up} {
-    padding: 4rem 8rem;
+    padding: 4px 8px;
 }
 }

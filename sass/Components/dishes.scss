@@ -7,7 +7,7 @@
     background: $white;
     border-radius: 10px;
     margin-bottom: 10px;
-    animation: meal-appear $anim-dur cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: plate-appear $anim-dur cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     overflow: hidden;
     @include general-shadow;
     @include flex(row, inherit, space-between, nowrap);
@@ -36,7 +36,7 @@
 
     &__price {
         align-self: flex-end;
-        margin-left: 10px;
+        margin-right: 10px;
     }
 
     &__confirmation {
@@ -49,9 +49,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: -0.75px -4.5px -0.75px 1px;
+        margin-right: -50px;
         transition: margin-right $anim-dur ease;
-
         i {
             transform: rotate(0);
             transition: transform $anim-dur ease;
@@ -70,7 +69,7 @@
         }
     }
 
-    @for $i from 1 through $num-plates {
+    @for $i from 1 through $num-plate {
         &--#{$i} {
           animation-delay: $anim-delay * $i;
         }
