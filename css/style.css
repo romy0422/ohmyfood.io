@@ -1,5 +1,7 @@
 /*Mixin animation heart*/
 /*Mixin mobile 768px*/
+/*Mixin animation heart*/
+/*Mixin mobile 768px*/
 .section-dishes__content {
   padding: rem(50) rem(20);
 }
@@ -345,10 +347,10 @@
   text-transform: capitalize;
 }
 .bloc-card__status {
-  padding: rem(8) rem(12);
+  padding: 8px 12px;
   background-color: #99E2D0;
   color: #008766;
-  font-size: rem(14);
+  font-size: 14px;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -366,6 +368,10 @@
   .bloc-card {
     flex-basis: 31%;
   }
+}
+
+.section-resto article:nth-last-child(-n+2) span:last-child {
+  display: none;
 }
 
 /*Mixin animation heart*/
@@ -501,6 +507,10 @@
   .explorer {
     flex-basis: 30%;
   }
+}
+
+.section-resto article:nth-last-child(-n+2) span:last-child {
+  display: none;
 }
 
 /*Mixin animation heart*/

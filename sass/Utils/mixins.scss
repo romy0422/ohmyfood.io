@@ -10,6 +10,7 @@
     );
 }
 
+
 /*Mixin mobile 768px*/
 
 @mixin mobile-only {
@@ -37,3 +38,16 @@
     @mixin transition-ease {
         transition: all .3s ease;
     }
+
+    @mixin new{
+        padding: 8px 12px;
+        background-color: $color-tertiary;
+        color: $color-tertiary-strong;
+        font-size: 14px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        @include general-shadow;
+       
+    }
+
