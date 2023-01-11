@@ -1,0 +1,17 @@
+@use '../Utils/mixins.scss';
+@use '../Utils/variables.scss';
+
+
+
+.btn-exp{
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    border: none;
+    width: 170px;
+    height: 40px;
+    @include mixins.gradiant(1);
+    &:hover {
+        background-color: $color-primary-light;
+        -moz-background-color:  $color-primary-light;
+      
+}}
