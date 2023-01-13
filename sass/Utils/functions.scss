@@ -1,9 +1,1 @@
 @import 'mixins.scss';
-    
-@function rem($size, $base: $base-font-size) {
-    @return calc(1rem * $size / $base);
-}
-
-@function em($size, $base: $base-font-size) {
-    @return calc(1em * $size / $base);
-}

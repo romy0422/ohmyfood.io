@@ -10,4 +10,8 @@
     width: 170px;
     height: 40px;
     @include mixins.gradiant(1);
-}
+    &:hover {
+        background-color: $color-primary-light;
+        -moz-background-color:  $color-primary-light;
+      
+}}

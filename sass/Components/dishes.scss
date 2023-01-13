@@ -3,7 +3,7 @@
 @use '../Utils/mixins.scss';
 
 .meal {
-    padding: 12px;
+   
     background: $white;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -16,6 +16,7 @@
         white-space: nowrap;
         overflow: hidden;
         flex: 1;
+        padding: 10px;
     }
 
     &__title, &__composition {
@@ -26,7 +27,7 @@
     &__title {
         font-weight: 900;
         font-size: 18px;
-        margin-bottom: 50px;
+        margin-bottom: 15px;
     }
 
     &__composition {
@@ -37,26 +38,28 @@
     &__price {
         align-self: flex-end;
         margin-right: 10px;
+        margin-bottom: 20px;
     }
 
     &__confirmation {
         background-color: #99E2D0;
         color: $white;
-        font-size: 20px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        width: 35px;
+        font-size: rem(20);
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        width: 3.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: -50px;
+        margin: -0.75rem -4.5rem -0.75rem 1rem;
         transition: margin-right $anim-dur ease;
         i {
             transform: rotate(0);
             transition: transform $anim-dur ease;
+
         }   
     }
-
+    
     &:hover {
         @include hover-shadow;
 
@@ -66,12 +69,6 @@
             i {
                 transform: rotate(360deg);
             }
-        }
-    }
-
-    @for $i from 1 through $num-plate {
-        &--#{$i} {
-          animation-delay: $anim-delay * $i;
         }
     }
 
