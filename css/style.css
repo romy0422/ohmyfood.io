@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Mixin animation heart*/
 /*Mixin mobile 768px*/
 /*Mixin animation heart*/
@@ -164,14 +163,16 @@ section, .section-dishes__content {
   font-size: 30px;
   position: absolute;
   transform: translateY(-50%);
-  margin-left: 300px;
+  margin-left: 215px;
   padding-bottom: 50px;
 }
 
 .section-resto__hearts {
-  background: gradient(1);
+  background: gradiant(1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   opacity: 0;
   transition: all 200ms ease-in-out;
   cursor: pointer;
@@ -181,51 +182,6 @@ section, .section-dishes__content {
   opacity: 1;
 }
 
-/*Heart SVG*/
-.heart_btn {
-  margin-left: 200px;
-  padding-bottom: 50px;
-  font-size: 12px;
-  position: relative;
-  cursor: pointer;
-}
-.heart_btn embed {
-  height: 30px;
-  width: 30px;
-  font-size: 30px;
-  position: absolute;
-  right: 30px;
-}
-.heart_btn .heart_btn_enable {
-  position: absolute;
-  opacity: 0;
-}
-.heart_btn:hover {
-  cursor: pointer;
-  animation: heart_btn 0.5s ease;
-  -webkit-animation: heart_btn 1s ease;
-}
-.heart_btn:hover .heart_btn_enable {
-  opacity: 1;
-}
-.heart_btn:hover .heart_btn_disable {
-  opacity: 0;
-}
-
-@keyframes heart_btn {
-  0% {
-    opacity: 0.1;
-  }
-  40% {
-    opacity: 0.2;
-  }
-  70% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /*Mixin animation heart*/
 /*Mixin mobile 768px*/
 .btn-exp {
@@ -380,14 +336,16 @@ section, .section-dishes__content {
   font-size: 30px;
   position: absolute;
   transform: translateY(-50%);
-  margin-left: 300px;
+  margin-left: 215px;
   padding-bottom: 50px;
 }
 
 .section-resto__hearts {
-  background: gradient(1);
+  background: gradiant(1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   opacity: 0;
   transition: all 200ms ease-in-out;
   cursor: pointer;
@@ -398,56 +356,6 @@ section, .section-dishes__content {
   opacity: 1;
 }
 
-/*Heart SVG*/
-.heart_btn {
-  margin-left: 200px;
-  padding-bottom: 50px;
-  font-size: 12px;
-  position: relative;
-  cursor: pointer;
-}
-
-.heart_btn embed {
-  height: 30px;
-  width: 30px;
-  font-size: 30px;
-  position: absolute;
-  right: 30px;
-}
-
-.heart_btn .heart_btn_enable {
-  position: absolute;
-  opacity: 0;
-}
-
-.heart_btn:hover {
-  cursor: pointer;
-  animation: heart_btn 0.5s ease;
-  -webkit-animation: heart_btn 1s ease;
-}
-
-.heart_btn:hover .heart_btn_enable {
-  opacity: 1;
-}
-
-.heart_btn:hover .heart_btn_disable {
-  opacity: 0;
-}
-
-@keyframes heart_btn {
-  0% {
-    opacity: 0.1;
-  }
-  40% {
-    opacity: 0.2;
-  }
-  70% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .meal {
   background: #FFF;
   border-radius: 10px;
@@ -738,14 +646,16 @@ section, .section-dishes__content {
   font-size: 30px;
   position: absolute;
   transform: translateY(-50%);
-  margin-left: 300px;
+  margin-left: 215px;
   padding-bottom: 50px;
 }
 
 .section-resto__hearts {
-  background: gradient(1);
+  background: gradiant(1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   opacity: 0;
   transition: all 200ms ease-in-out;
   cursor: pointer;
@@ -756,56 +666,6 @@ section, .section-dishes__content {
   opacity: 1;
 }
 
-/*Heart SVG*/
-.heart_btn {
-  margin-left: 200px;
-  padding-bottom: 50px;
-  font-size: 12px;
-  position: relative;
-  cursor: pointer;
-}
-
-.heart_btn embed {
-  height: 30px;
-  width: 30px;
-  font-size: 30px;
-  position: absolute;
-  right: 30px;
-}
-
-.heart_btn .heart_btn_enable {
-  position: absolute;
-  opacity: 0;
-}
-
-.heart_btn:hover {
-  cursor: pointer;
-  animation: heart_btn 0.5s ease;
-  -webkit-animation: heart_btn 1s ease;
-}
-
-.heart_btn:hover .heart_btn_enable {
-  opacity: 1;
-}
-
-.heart_btn:hover .heart_btn_disable {
-  opacity: 0;
-}
-
-@keyframes heart_btn {
-  0% {
-    opacity: 0.1;
-  }
-  40% {
-    opacity: 0.2;
-  }
-  70% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .explorer {
   background: #F6F6F6;
   padding: 25px 10px;
@@ -861,6 +721,10 @@ section, .section-dishes__content {
 }
 .section-resto article:nth-last-child(-n+2) span:last-child {
   display: none;
+}
+
+aside .aside-bloc-card span {
+  display: block;
 }
 
 /*Mixin animation heart*/
@@ -985,9 +849,6 @@ section, .section-dishes__content {
 .section-description i {
   margin-right: 15px;
 }
-.section-description .heart_btn {
-  margin-right: 15px;
-}
 .section-description h1 {
   font-size: rem(24);
   font-weight: 700;
@@ -1000,22 +861,23 @@ section, .section-dishes__content {
   margin-bottom: rem(30);
   padding: 0 rem(20);
 }
-
 .section-explorer {
   list-style-type: none;
 }
 @media only screen and (min-width: 768px) {
-  .section-explorer__list {
+  .section-explorer {
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
 
 .bloc-card {
   background-color: #F6F6F6;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .bloc-card__list {
@@ -1026,37 +888,35 @@ section, .section-dishes__content {
     flex-wrap: wrap;
   }
 }
-
 .section-explorer {
   list-style-type: none;
   background-color: #F6F6F6;
 }
-@media only screen and (min-width: 992px) {
-  .section-explorer {
-    display: flex;
-  }
-}
-
-.bloc-card {
+.bloc-resto {
+  list-style-type: none;
   background-color: #F6F6F6;
 }
 @media only screen and (min-width: 992px) {
-  .bloc-card {
-    width: 25%;
+  .bloc-resto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 2%;
   }
-  .bloc-card__img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+}
+@media only screen and (min-width: 1200px) {
+  .bloc-resto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 2%;
   }
 }
 
-div::after {
-  content: " class=" bloc-card__city ">Ménilmontant";
+.section-global {
+  display: flex;
+  flex-direction: row;
 }
-
 footer {
   padding: 20px;
 }
@@ -1117,14 +977,12 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   color: #000;
-  max-width: 1400px;
   width: 100%;
 }
 
 h2 {
   font-size: rem(25);
   font-weight: 900;
-  margin-bottom: rem(20);
 }
 
 a {

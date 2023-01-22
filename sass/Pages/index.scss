@@ -17,16 +17,13 @@
     padding: 0 0 50px;
     background-color: $gray-light;
     text-align: center;
+   
 
  
         i {
             margin-right: 15px;
         }
     
-        .heart_btn{
-
-            margin-right: 15px;
-        }
     h1 {
         font-size: rem(24);
         font-weight: 700;
@@ -40,55 +37,82 @@
         margin-bottom: rem(30);
         padding: 0 rem(20);
     }
+
+    @media #{$large-up} {
+   
+
+    }
 }
+
+
 
 .section-explorer {
     list-style-type: none;
-
+   
     @media #{$medium-up} {
-        &__list {
-            @include flex(column, center, space-between, wrap)
-        }
+        
+            width: 40%;
+            @include flex(column, center, space-between, nowrap)
+        
     }
 }
 
 .bloc-card {
     background-color: $gray-light;
-
+width: 100%;
     @media #{$medium-up} {
         &__list {   
             @include flex(column, center, space-between, wrap)
         }
     }
+
+    @media #{$large-up} {
+     
 }
+}
+
 
 .section-explorer {
     list-style-type: none;
     background-color: $gray-light;
     @media #{$large-up} {
-        &__list {
-          
-        }
-        display: flex;
+    
+      
     }
 }
 
-.bloc-card {
-    background-color: $gray-light;
 
+
+
+
+.bloc-resto {
+    list-style-type: none;
+    background-color: $gray-light;
+    
+    @media #{$large-up} {
+       display: flex;
+       flex-wrap: wrap;
+       width: 80%;
+       gap: 2%;
+       }
+
+       @media #{$xlarge-up} {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        gap: 2%;
+        }
+    
+}
+
+
+.section-global {
+   
+    display: flex;
+    flex-direction: row;
     @media #{$large-up} {
         
-       width: 25%;
-        &__img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-top-left-radius: 1rem;
-            border-top-right-radius: 1rem;
-        }
+     
+        
     }
-}
-
-div::after {
-    content:" class="bloc-card__city">Ménilmontant";
   }
