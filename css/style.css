@@ -1,7 +1,5 @@
 /*Mixin animation heart*/
 /*Mixin mobile 768px*/
-/*Mixin animation heart*/
-/*Mixin mobile 768px*/
 footer {
   padding: 20px;
 }
@@ -32,7 +30,7 @@ section, .section-dishes__content {
 
 /*Mixin animation heart*/
 /*Mixin mobile 768px*/
-/*Apparition des plats*/
+/*plate apear*/
 @keyframes plate-appear {
   0% {
     transform: translateY(-3rem) scale(0);
@@ -51,9 +49,10 @@ section, .section-dishes__content {
   100% {
     transform: translateY(0) scale(1);
     opacity: 1;
-    z-index: 99;
+    z-index: 1;
   }
 }
+/*Confirmation*/
 @keyframes confirmation-rotate {
   0% {
     transform: rotate(180deg);
@@ -123,7 +122,7 @@ section, .section-dishes__content {
   position: absolute;
   content: "OhMyFood";
   color: black;
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand";
   font-weight: normal;
   font-size: 18px;
   text-transform: lowercase;
@@ -174,7 +173,7 @@ section, .section-dishes__content {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 600ms ease-in-out;
   cursor: pointer;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
@@ -199,7 +198,7 @@ section, .section-dishes__content {
 
 /*Mixin animation heart*/
 /*Mixin mobile 768px*/
-/*Apparition des plats*/
+/*plate apear*/
 @keyframes plate-appear {
   0% {
     transform: translateY(-3rem) scale(0);
@@ -218,9 +217,10 @@ section, .section-dishes__content {
   100% {
     transform: translateY(0) scale(1);
     opacity: 1;
-    z-index: 99;
+    z-index: 1;
   }
 }
+/*Confirmation*/
 @keyframes confirmation-rotate {
   0% {
     transform: rotate(180deg);
@@ -295,7 +295,7 @@ section, .section-dishes__content {
   position: absolute;
   content: "OhMyFood";
   color: black;
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand";
   font-weight: normal;
   font-size: 18px;
   text-transform: lowercase;
@@ -347,7 +347,7 @@ section, .section-dishes__content {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 600ms ease-in-out;
   cursor: pointer;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
@@ -493,9 +493,6 @@ section, .section-dishes__content {
   right: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
-.bloc-card:hover {
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-}
 @media only screen and (min-width: 768px) {
   .bloc-card {
     flex-basis: 48%;
@@ -509,7 +506,7 @@ section, .section-dishes__content {
 
 /*Mixin animation heart*/
 /*Mixin mobile 768px*/
-/*Apparition des plats*/
+/*plate apear*/
 @keyframes plate-appear {
   0% {
     transform: translateY(-3rem) scale(0);
@@ -528,9 +525,10 @@ section, .section-dishes__content {
   100% {
     transform: translateY(0) scale(1);
     opacity: 1;
-    z-index: 99;
+    z-index: 1;
   }
 }
+/*Confirmation*/
 @keyframes confirmation-rotate {
   0% {
     transform: rotate(180deg);
@@ -605,7 +603,7 @@ section, .section-dishes__content {
   position: absolute;
   content: "OhMyFood";
   color: black;
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand";
   font-weight: normal;
   font-size: 18px;
   text-transform: lowercase;
@@ -657,7 +655,7 @@ section, .section-dishes__content {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 600ms ease-in-out;
   cursor: pointer;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
@@ -721,10 +719,6 @@ section, .section-dishes__content {
 }
 .section-resto article:nth-last-child(-n+2) span:last-child {
   display: none;
-}
-
-aside .aside-bloc-card span {
-  display: block;
 }
 
 /*Mixin animation heart*/
@@ -838,7 +832,6 @@ section, .section-dishes__content {
 
 #content {
   position: relative;
-  animation: content-appear 3.5s ease-in-out both;
 }
 
 .section-description {
@@ -866,12 +859,12 @@ section, .section-dishes__content {
 }
 @media only screen and (min-width: 768px) {
   .section-explorer {
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -882,7 +875,7 @@ section, .section-dishes__content {
 @media only screen and (min-width: 768px) {
   .bloc-card__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -899,16 +892,14 @@ section, .section-dishes__content {
 @media only screen and (min-width: 992px) {
   .bloc-resto {
     display: flex;
-    flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     gap: 2%;
   }
 }
 @media only screen and (min-width: 1200px) {
   .bloc-resto {
     display: flex;
-    flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     gap: 2%;
   }
 }
@@ -951,7 +942,7 @@ footer {
 }
 
 .footer-title {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand";
   font-weight: normal;
   font-size: 18px;
   text-transform: lowercase;
@@ -961,9 +952,6 @@ footer {
 
 li {
   margin-bottom: 10px;
-}
-li a:hover {
-  color: #cccccc;
 }
 li i {
   margin-right: 5px;
@@ -1033,6 +1021,15 @@ html {
 img {
   height: auto;
   max-width: 100%;
+}
+
+.header-title {
+  font-family: "Shrikhand";
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: lowercase;
+  margin-left: 2px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

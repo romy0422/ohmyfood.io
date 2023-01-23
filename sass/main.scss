@@ -1,6 +1,5 @@
 @import "./utils/variables";
 @import "./utils/responsives";
-@import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extentions";
 @import "./components/animations";
@@ -14,3 +13,4 @@
 @import "./pages/index";
 @import "./Layout/footer";
 @import "./Base/corps";
+@import "./Layout/header.scss"

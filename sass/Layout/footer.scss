@@ -7,7 +7,7 @@ footer {
     @extend %container-md;
 }
 .footer-title {
-    font-family: 'Shrikhand', cursive;
+    font-family: 'Shrikhand';
     font-weight: normal;
     font-size: 18px;
     text-transform: lowercase;
@@ -17,12 +17,6 @@ footer {
 
 li {   
         margin-bottom: 10px;
-
-        a {
-            &:hover {
-                color: darken($white, 20%);
-            }
-        }
 
         i {
             margin-right: 5px;

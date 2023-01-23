@@ -15,7 +15,7 @@
 	100% {
 	  transform: translateY(0) scale(1);
 	  opacity: 1;
-	  z-index: 99;
+	  z-index: 1;
 	}
   }
 
@@ -99,7 +99,7 @@
 		position: absolute;
 		content: 'OhMyFood';  
 		color:black;
-		font-family: 'Shrikhand', cursive;
+		font-family: 'Shrikhand';
 		font-weight: normal;
 		font-size: 18px;
 		text-transform: lowercase;
@@ -160,7 +160,7 @@
 	-moz-background-clip: text;
 	-moz-text-fill-color: transparent;
     opacity: 0;
-    transition: all 200ms ease-in-out;
+    transition: all 600ms ease-in-out;
     cursor: pointer;
 		@include mixins.gradiant(1);
 &:hover{

@@ -27,159 +27,148 @@
     </div>
 
     <!-- Header, Navigation bar -->
-    <div>
-        <header>
-            <img class="header-logo" src="./images/logo/ohmyfood.png" alt="logo ohmyfood">
-        </header>
+    <header>
+        <h1 class="header-title">Ohmyfood</h1>
+    </header>
 
 
-        <!-- Main-->
+    <!-- Main-->
 
-        <main>
+    <main>
 
+        <!-- Description -->
 
+        <section class="section-description">
+            <div onclick=""><i class="fas fa-map-marker-alt section-localisation__icon"></i></div>
+            <p>Paris, belleville</p>
 
+            <h2>Réservez le menu qui <br> vous convient</h2>
 
+            <p class="section-description__p">
+                Découvrez des restaurants d'exception, sélectionnés par nos soins
+            </p>
 
-            <!-- Description -->
+            <form action="#content">
+                <button class="btn-exp" type="submit">Explorer nos restaurants</button>
+            </form>
 
-            <section class="section-description">
-                <div onclick=""><i class="fas fa-map-marker-alt section-localisation__icon"></i></div>
-                <h3>Paris, belleville</h3>
+        </section>
 
-                <h1>Réservez le menu qui <br> vous convient</h1>
+        <!--Explorer-->
 
-                <p class="section-description__p">
-                    Découvrez des restaurants d'exception, sélectionnés par nos soins
-                </p>
+        <section class="section-explorer">
 
-                <form action="#content">
-                    <button class="btn-exp" type="submit">Explorer nos restaurants</button>
-                </form>
+            <h2>Fonctionnement</h2>
 
-            </section>
-
-                <!--Explorer-->
-
-                <section class="section-explorer">
-
-                    <h2>Fonctionnement</h2>
-
-                    <ol class="explorer__list">
-                        <li class="explorer">
-                            <div class="explorer__number">
-                                1
-                            </div>
-
-                            <i class="fas fa-mobile-alt explorer__icon"></i>
-                            <h3 class="explorer__title">Choisissez un restaurant</h3>
-                        </li>
-
-                        <li class="explorer">
-                            <div class="explorer__number">
-                                2
-                            </div>
-
-                            <i class="fas fa-list explorer__icon"></i>
-                            <h3 class="explorer__title">Composez votre menu</h3>
-                        </li>
-
-                        <li class="explorer">
-                            <div class="explorer__number">
-                                3
-                            </div>
-
-                            <i class="fas fa-store explorer__icon"></i>
-                            <h3 class="explorer__title">Dégustez au restaurant</h3>
-                        </li>
-                    </ol>
-                </section>
-
-            <div>
-                <div>
-                </div>
-            </div>
-            <section class="section-global">
-                <!-- Restaurants -->
-
-                <section id="content" class="section-resto">
-                    <h2>Restaurants
-                    </h2>
-                    <div class="bloc-resto">
-                        <article class="bloc-card">
-                            <div class="bloc-card__body">
-                                <a href="#"><img class="bloc-card__img"
-                                        src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                                        alt="La palette du goût" title="Cliquez pour découvrir"></a>
-                                <div class="bloc-card__description">
-                                    <div class="bloc-card__title">
-                                        <p>La palette du goût</p>
-                                        <h4 class="bloc-card__city">Ménilmontant</h4>
-                                    </div>
-                                    <i class="far fa-heart section-resto__heartr"></i>
-                                    <i class="fas fa-heart section-resto__hearts"></i>
-                                </div>
-                            </div>
-                            <span class="bloc-card__status">Nouveau</span>
-                        </article>
-
-                        <article class="bloc-card">
-                            <div class="bloc-card__body">
-                                <a href="#"><img class="bloc-card__img"
-                                        src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"
-                                        title="Cliquez pour découvrir"></a>
-                                <div class="bloc-card__description">
-                                    <div class="bloc-card__title">
-                                        <p>La note enchantée</p>
-                                        <h4 class="bloc-card__city">Charonne</h4>
-                                    </div>
-                                    <i class="far fa-heart section-resto__heartr"></i>
-                                    <i class="fas fa-heart section-resto__hearts"></i>
-                                </div>
-
-                            </div>
-                            <span class="bloc-card__status">Nouveau</span>
-                        </article>
-
-
-                        <article class="bloc-card">
-                            <div class="bloc-card__body">
-                                <a href="./html/alafrancaise.html"><img class="bloc-card__img"
-                                        src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                                        alt="A la française" title="Cliquez pour découvrir"></a>
-                                <div class="bloc-card__description">
-                                    <div class="bloc-card__title">
-                                        <p>A la française</p>
-                                        <h4 class="bloc-card__city">Cité Rouge</h4>
-                                    </div>
-                                    <i class="far fa-heart section-resto__heartr"></i>
-                                    <i class="fas fa-heart section-resto__hearts"></i>
-                                </div>
-
-                            </div>
-                            <span class="bloc-card__status">Nouveau</span>
-                        </article>
-
-                        <article class="bloc-card">
-                            <div class="bloc-card__body">
-                                <a href="#"><img class="bloc-card__img"
-                                        src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                                        alt="Le délice des sens" title="Cliquez pour découvrir"></a>
-                                <div class="bloc-card__description">
-                                    <div class="bloc-card__title">
-                                        <p>Le délice des sens</p>
-                                        <h4 class="bloc-card__city">Folie-Méricourt</h4>
-
-                                    </div>
-                                    <i class="far fa-heart section-resto__heartr"></i>
-                                    <i class="fas fa-heart section-resto__hearts"></i>
-                                </div>
-                                    <span class="bloc-card__status">Nouveau</span>
-                        </article>
+            <ol class="explorer__list">
+                <li class="explorer">
+                    <div class="explorer__number">
+                        1
                     </div>
-                </section>
-        </main>
-    </div>
+
+                    <i class="fas fa-mobile-alt explorer__icon"></i>
+                    <h3 class="explorer__title">Choisissez un restaurant</h3>
+                </li>
+
+                <li class="explorer">
+                    <div class="explorer__number">
+                        2
+                    </div>
+
+                    <i class="fas fa-list explorer__icon"></i>
+                    <h3 class="explorer__title">Composez votre menu</h3>
+                </li>
+
+                <li class="explorer">
+                    <div class="explorer__number">
+                        3
+                    </div>
+
+                    <i class="fas fa-store explorer__icon"></i>
+                    <h3 class="explorer__title">Dégustez au restaurant</h3>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Restaurants -->
+
+        <section id="content" class="section-resto">
+            <h2>Restaurants
+            </h2>
+            <div class="bloc-resto">
+                <article class="bloc-card">
+                    <div class="bloc-card__body">
+                        <a href="#"><img class="bloc-card__img"
+                                src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                alt="La palette du goût" title="Cliquez pour découvrir"></a>
+                        <div class="bloc-card__description">
+                            <div class="bloc-card__title">
+                                <h4>La palette du goût</h4>
+                                <p class="bloc-card__city">Ménilmontant</p>
+
+                                <i class="far fa-heart section-resto__heartr"></i>
+                                <i class="fas fa-heart section-resto__hearts"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="bloc-card__status">Nouveau</span>
+                </article>
+
+                <article class="bloc-card">
+                    <div class="bloc-card__body">
+                        <a href="#"><img class="bloc-card__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                alt="La note enchantée" title="Cliquez pour découvrir"></a>
+                        <div class="bloc-card__description">
+                            <div class="bloc-card__title">
+                                <p>La note enchantée</p>
+                                <h4 class="bloc-card__city">Charonne</h4>
+                            </div>
+                            <i class="far fa-heart section-resto__heartr"></i>
+                            <i class="fas fa-heart section-resto__hearts"></i>
+                        </div>
+
+                    </div>
+                    <span class="bloc-card__status">Nouveau</span>
+                </article>
+
+
+                <article class="bloc-card">
+                    <div class="bloc-card__body">
+                        <a href="./html/alafrancaise.html"><img class="bloc-card__img"
+                                src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française"
+                                title="Cliquez pour découvrir"></a>
+                        <div class="bloc-card__description">
+                            <div class="bloc-card__title">
+                                <p>A la française</p>
+                                <h4 class="bloc-card__city">Cité Rouge</h4>
+                            </div>
+                            <i class="far fa-heart section-resto__heartr"></i>
+                            <i class="fas fa-heart section-resto__hearts"></i>
+                        </div>
+
+                    </div>
+                    <span class="bloc-card__status">Nouveau</span>
+                </article>
+
+                <article class="bloc-card">
+                    <div class="bloc-card__body">
+                        <a href="#"><img class="bloc-card__img"
+                                src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="Le délice des sens" title="Cliquez pour découvrir"></a>
+                        <div class="bloc-card__description">
+                            <div class="bloc-card__title">
+                                <p>Le délice des sens</p>
+                                <h4 class="bloc-card__city">Folie-Méricourt</h4>
+
+                            </div>
+                            <i class="far fa-heart section-resto__heartr"></i>
+                            <i class="fas fa-heart section-resto__hearts"></i>
+                        </div>
+                        <span class="bloc-card__status">Nouveau</span>
+                </article>
+            </div>
+        </section>
+    </main>
     <!-- Footer -->
 
     <footer>

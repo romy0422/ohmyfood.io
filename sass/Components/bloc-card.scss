@@ -1,7 +1,5 @@
-@use '../Utils/mixins.scss';
-@use '../Utils/variables.scss';
-
-
+@use "../Utils/mixins.scss";
+@use "../Utils/variables.scss";
 
 .bloc-card {
     position: relative;
@@ -34,13 +32,8 @@
         text-transform: capitalize;
     }
 
-    &__status{
+    &__status {
         @include new;
-    
-    }
-
-    &:hover {
-        @include hover-shadow;
     }
 
     @media #{$medium-up} {
@@ -51,4 +44,3 @@
         flex-basis: 31%;
     }
 }
-

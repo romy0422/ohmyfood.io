@@ -10,7 +10,6 @@
 
 #content {
     position: relative;
-    animation: content-appear 3.5s ease-in-out both;
 }
 
 .section-description {
@@ -51,8 +50,8 @@
    
     @media #{$medium-up} {
         
-            width: 40%;
-            @include flex(column, center, space-between, nowrap)
+            width: 100%;
+            @include flex(column, center, space-between,wrap)
         
     }
 }
@@ -62,7 +61,7 @@
 width: 100%;
     @media #{$medium-up} {
         &__list {   
-            @include flex(column, center, space-between, wrap)
+            @include flex(row, center, space-between, wrap)
         }
     }
 
@@ -91,15 +90,15 @@ width: 100%;
     
     @media #{$large-up} {
        display: flex;
-       flex-wrap: wrap;
-       width: 80%;
+      
+       width: 100%;
        gap: 2%;
        }
 
        @media #{$xlarge-up} {
         display: flex;
-        flex-wrap: wrap;
-        width: 80%;
+ 
+        width:100%;
         gap: 2%;
         }
     
