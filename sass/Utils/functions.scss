@@ -1,0 +1,8 @@
+@use "./variables.scss";
+
+
+@for $i from 1 through $nbr-plates {
+    #meal-#{$i} {
+      animation-delay: $anim-delay * $i;
+    }
+}

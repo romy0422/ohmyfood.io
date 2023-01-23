@@ -28,6 +28,46 @@ section, .section-dishes__content {
   }
 }
 
+#meal-1 {
+  animation-delay: 75ms;
+}
+
+#meal-2 {
+  animation-delay: 150ms;
+}
+
+#meal-3 {
+  animation-delay: 225ms;
+}
+
+#meal-4 {
+  animation-delay: 300ms;
+}
+
+#meal-5 {
+  animation-delay: 375ms;
+}
+
+#meal-6 {
+  animation-delay: 450ms;
+}
+
+#meal-7 {
+  animation-delay: 525ms;
+}
+
+#meal-8 {
+  animation-delay: 600ms;
+}
+
+#meal-9 {
+  animation-delay: 675ms;
+}
+
+#meal-10 {
+  animation-delay: 750ms;
+}
+
 /*Mixin animation heart*/
 /*Mixin mobile 768px*/
 /*plate apear*/
@@ -428,6 +468,46 @@ section, .section-dishes__content {
   .meal {
     flex-basis: 32%;
   }
+}
+
+#meal-1 {
+  animation-delay: 75ms;
+}
+
+#meal-2 {
+  animation-delay: 150ms;
+}
+
+#meal-3 {
+  animation-delay: 225ms;
+}
+
+#meal-4 {
+  animation-delay: 300ms;
+}
+
+#meal-5 {
+  animation-delay: 375ms;
+}
+
+#meal-6 {
+  animation-delay: 450ms;
+}
+
+#meal-7 {
+  animation-delay: 525ms;
+}
+
+#meal-8 {
+  animation-delay: 600ms;
+}
+
+#meal-9 {
+  animation-delay: 675ms;
+}
+
+#meal-10 {
+  animation-delay: 750ms;
 }
 
 .underline-title {
