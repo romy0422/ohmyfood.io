@@ -4,10 +4,10 @@ $white: (color white);
 $base-font-size: 16;
 
 // Responsive
-$small: 576px;
-$medium: 768px;
-$large: 992px;
-$xlarge: 1200px;
+
+$medium: 768px!default;
+$large: 992px!default;
+
 
 // Colors
 $color-primary: #9356DC;

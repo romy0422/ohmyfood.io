@@ -11,20 +11,6 @@
 }
 
 
-/*Mixin mobile 768px*/
-
-@mixin mobile-only {
-    @media screen and (max-width:($medium)){
-     grid-template-columns: 1fr;
-    }
-    }
-
-    @mixin desktop-only {
-        @media screen and (max-width:($large)){
-         grid-template-columns: 1fr;
-        }
-        }
-
     @mixin general-shadow {
         box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
     }
@@ -46,6 +32,15 @@
         
 		-moz-transition: all .3s ease;
 			
+    }
+
+    @mixin heart{
+        font-size: 30px;
+        position: absolute;
+        right: 15px;
+        bottom: 36px;
+        
+        
     }
 
     @mixin new{

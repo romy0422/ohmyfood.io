@@ -1,7 +1,12 @@
 @use '../Utils/mixins.scss';
-@use '../Utils/variables.scss';
+@import '../Utils/variables.scss';
 
 /*plate apear*/
+@for $i from 1 through $nbr-plates {
+    #meal-#{$i} {
+      animation-delay: $anim-delay * $i;
+    }
+}
 
 @keyframes plate-appear {
 	0% {
@@ -141,16 +146,6 @@
 	
 	
 /*Heart*/
-
-.section-resto__hearts, .section-resto__heartr {
-    font-size: 30px;
-    position: absolute;
-    transform: translateY(-50%);
-	margin-left: 215px;
-    padding-bottom: 50px;
-   
-  
-}
 
 
 .section-resto__hearts{

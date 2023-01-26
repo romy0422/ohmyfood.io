@@ -35,12 +35,18 @@
     &__status {
         @include new;
     }
+&__description{
+    display: flex;
+    flex-direction: row
+}
+    &__description i{
+       @include heart;
+      
+    }
 
     @media #{$medium-up} {
         flex-basis: 48%;
     }
 
-    @media #{$xlarge-up} {
-        flex-basis: 31%;
-    }
+ 
 }
