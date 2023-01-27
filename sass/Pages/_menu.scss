@@ -6,7 +6,7 @@
 
 .section-dishes{
     padding: 0;
-
+    background-color: $gray-light;
     &__banner {
         width: 100%;
         height: 300px;
@@ -22,7 +22,7 @@
         margin-top: - 4rem;
         position: relative;
         z-index: 2;
-        @extend %container;
+        
     }
 
     &__info {
@@ -41,6 +41,12 @@
         margin-bottom: 3px;
 
         @media #{$medium-up} {
+            .meal__list {
+                @include flex(row, stretch, space-between, wrap)
+            }
+        }
+
+        @media #{$large-up} {
             .meal__list {
                 @include flex(row, stretch, space-between, wrap)
             }

@@ -42,8 +42,11 @@
 
     @media #{$medium-up} {
         flex-basis: 47%;
+        @include flex(row, center, flex-start, nowrap);
     }
 
     @media #{$large-up} {
+        flex-basis: 47%;
+        @include flex(row, center, flex-start, nowrap);
     }
 }
