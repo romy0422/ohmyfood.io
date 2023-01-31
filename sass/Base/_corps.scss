@@ -1,5 +1,10 @@
+
+*{
+    box-sizing: border-box;
+}
 html {
     font-size: unquote($base-font-size + 'px');
+    
 }
 
 body {
@@ -32,3 +37,8 @@ button {
     background: none;
     padding: 0;
 }
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+  }

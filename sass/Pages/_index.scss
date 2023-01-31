@@ -10,6 +10,10 @@
 
 #content {
     position: relative;
+    background-color: $gray-light;
+    @media #{$large-up} {
+        @include flex(column, center, space-between, nowrap)
+    }
 }
 
 .section-description {
@@ -49,9 +53,6 @@
        
       }
 
-      i{
-        
-      }
 
       .map{
         display: flex;
@@ -82,26 +83,28 @@
             @include flex(column, center, space-between,wrap)
         
     }
+
+    @media #{$large-up} {
+        @include flex(column, flex-start, space-between, nowrap)
+    }
 }
 
 .bloc-card {
     background-color: $gray-light;
 width: 100%;
-    @media #{$medium-up} {
-        &__list {   
-            @include flex(row, center, space-between, wrap)
-        }
+   
     }
 
     @media #{$large-up} {
+
+    
      
 }
-}
+
 
 
 .section-explorer {
     list-style-type: none;
-    background-color: $gray-light;
     @media #{$large-up} {
     
       
@@ -115,7 +118,6 @@ width: 100%;
 .bloc-resto {
     list-style-type: none;
     background-color: $gray-light;
-    
     @media #{$large-up} {
        display: flex;
       
@@ -123,6 +125,15 @@ width: 100%;
        gap: 2%;
        }
 
+       @media #{$medium-up} {
+        @include flex(row, flex-end, space-between, wrap);
+        width:100%;
+    }
+       @media #{$large-up} {
+        @include flex(row, flex-end, space-between, wrap);
+        width:80%;
+    }
     
 }
+
 

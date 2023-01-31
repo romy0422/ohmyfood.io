@@ -42,11 +42,15 @@
 
     @media #{$medium-up} {
         flex-basis: 47%;
-        @include flex(row, center, flex-start, nowrap);
+            &__list {   
+                @include flex(column, center, space-between, wrap);
+            }
     }
 
     @media #{$large-up} {
         flex-basis: 47%;
-        @include flex(row, center, flex-start, nowrap);
+        &__list{
+        @include flex(row, center, space-between, nowrap);
+        padding-left: 50px;
     }
-}
+}}

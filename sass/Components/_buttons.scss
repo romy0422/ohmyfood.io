@@ -10,16 +10,19 @@
     width: 170px;
     height: 40px;
     @include gradiant(1);
-    &:hover {
-        background-color: $color-primary-light;
-        -moz-background-color:  $color-primary-light;
+      &:hover{
+        background-color: $gray;
+    
       
-}}
-
+    }
+}
+// boutton explorer//
 .btn-exp{
     @extend .btn;
+   
 }
-
+//boutton commander//
 .btn-cmd{
     @extend .btn;
+   
 }
