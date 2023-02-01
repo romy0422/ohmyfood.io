@@ -16,6 +16,7 @@
 
     &__list {
         flex-direction: column;
+        padding-left: 10px;
     }
 
     &__number {
@@ -41,14 +42,14 @@
     }
 
     @media #{$medium-up} {
-        flex-basis: 47%;
+       
             &__list {   
                 @include flex(column, center, space-between, wrap);
             }
     }
 
     @media #{$large-up} {
-        flex-basis: 47%;
+       
         &__list{
         @include flex(row, center, space-between, nowrap);
         padding-left: 50px;

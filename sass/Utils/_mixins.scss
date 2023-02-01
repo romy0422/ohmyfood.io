@@ -3,7 +3,7 @@
 /*Mixin animation heart*/
 
 @mixin gradiant($opacity) {
-    background-image: linear-gradient(
+    background-color: linear-gradient(
         to top,
         rgba(147, 86, 220, $opacity),
         rgba(255, 121, 218, $opacity)
@@ -55,9 +55,8 @@
     }
     @mixin explorer{
         background: $gray-light;
-    padding: 25px 10px;
     margin-bottom: 20px;
-    margin-left: 5px;
+    margin-right: 20px;
     border-radius: 15px;
     position: relative;
     cursor: pointer;
@@ -67,3 +66,7 @@
     
     }
     
+    @mixin linear-gradient($degree, $color1, $color2) {
+        background: linear-gradient($degree, $color1 0%, $color2 100%);
+    }
+ 

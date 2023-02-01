@@ -9,11 +9,14 @@
     border: none;
     width: 170px;
     height: 40px;
-    @include gradiant(1);
-      &:hover{
-        background-color: $gray;
-    
-      
+    @include linear-gradient(180deg, $color-secondary, $color-primary);
+
+
+    &:hover {
+
+        transition: .5s ease;
+        @include linear-gradient(180deg, $color-secondary, $color-primary-light);
+        opacity: 1;
     }
 }
 // boutton explorer//

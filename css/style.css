@@ -195,7 +195,7 @@ section {
   opacity: 0;
   transition: all 600ms ease-in-out;
   cursor: pointer;
-  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-color: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
 .section-resto__hearts:hover {
   opacity: 1;
@@ -208,10 +208,12 @@ section {
   border: none;
   width: 170px;
   height: 40px;
-  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
 }
 .btn:hover, .btn-cmd:hover, .btn-exp:hover {
-  background-color: #7E7E7E;
+  transition: 0.5s ease;
+  background: linear-gradient(180deg, #FF79DA 0%, #b488e9 100%);
+  opacity: 1;
 }
 
 /*Mixin animation heart*/
@@ -398,7 +400,7 @@ section {
   opacity: 0;
   transition: all 600ms ease-in-out;
   cursor: pointer;
-  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-color: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
 
 .section-resto__hearts:hover {
@@ -754,7 +756,7 @@ section {
   opacity: 0;
   transition: all 600ms ease-in-out;
   cursor: pointer;
-  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-color: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
 
 .section-resto__hearts:hover {
@@ -763,9 +765,8 @@ section {
 
 .explorer {
   background: #F6F6F6;
-  padding: 25px 10px;
   margin-bottom: 20px;
-  margin-left: 5px;
+  margin-right: 20px;
   border-radius: 15px;
   position: relative;
   cursor: pointer;
@@ -788,6 +789,7 @@ section {
 }
 .explorer__list {
   flex-direction: column;
+  padding-left: 10px;
 }
 .explorer__number {
   background: #9356DC;
@@ -802,17 +804,14 @@ section {
   left: -13px;
 }
 .explorer:hover {
-  background-color: #F5EDFF;
-  -moz-background-color: #F5EDFF;
+  background-color: #b488e9;
+  -moz-background-color: #b488e9;
 }
 .explorer:hover i {
   color: #9356DC;
   -moz-color: #9356DC;
 }
 @media only screen and (min-width: 768px) {
-  .explorer {
-    flex-basis: 47%;
-  }
   .explorer__list {
     display: flex;
     flex-direction: column;
@@ -822,9 +821,6 @@ section {
   }
 }
 @media only screen and (min-width: 992px) {
-  .explorer {
-    flex-basis: 47%;
-  }
   .explorer__list {
     display: flex;
     flex-direction: row;
@@ -1036,7 +1032,7 @@ section {
   opacity: 0;
   transition: all 600ms ease-in-out;
   cursor: pointer;
-  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-color: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
 .section-resto__hearts:hover {
   opacity: 1;
@@ -1157,7 +1153,9 @@ section {
   font-size: rem(18);
   font-weight: 300;
   margin-bottom: rem(30);
-  padding: 0 rem(20);
+  padding: 0 22px;
+  align-self: center;
+  white-space: normal;
 }
 .section-description input {
   height: 50px;
@@ -1215,6 +1213,12 @@ section {
 .section-explorer {
   list-style-type: none;
 }
+@media only screen and (min-width: 992px) {
+  .section-explorer .explorer {
+    margin: 50px 50px;
+  }
+}
+
 .bloc-resto {
   list-style-type: none;
   background-color: #F6F6F6;

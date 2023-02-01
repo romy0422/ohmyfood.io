@@ -33,7 +33,9 @@
         font-size: rem(18);
         font-weight: 300;
         margin-bottom: rem(30);
-        padding: 0 rem(20);
+        padding: 0 22px;
+        align-self: center;
+        white-space: normal;
     }
      input {
         height: 50px;
@@ -106,7 +108,10 @@ width: 100%;
 .section-explorer {
     list-style-type: none;
     @media #{$large-up} {
-    
+    .explorer{
+        margin: 50px 50px;
+       
+    }
       
     }
 }
