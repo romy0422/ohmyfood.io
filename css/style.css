@@ -804,8 +804,8 @@ section {
   left: -13px;
 }
 .explorer:hover {
-  background-color: #b488e9;
-  -moz-background-color: #b488e9;
+  background-color: #f1d6f0;
+  -moz-background-color: #f8c1f8;
 }
 .explorer:hover i {
   color: #9356DC;
