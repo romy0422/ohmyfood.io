@@ -23,30 +23,31 @@
    
     
     h1 {
-        font-size: rem(24);
+        font-size: 24px;
         font-weight: 700;
-        margin-bottom: rem(20);
-        padding: 0 rem(40);
+        margin-bottom: 20px;
+        padding: 0 40px;
     }
 
     &__p {
-        font-size: rem(18);
+        font-size: 18px;
         font-weight: 300;
-        margin-bottom: rem(30);
+        margin-bottom: 30px;
         padding: 0 22px;
         align-self: center;
         white-space: normal;
     }
      input {
+        border: transparent;
         height: 50px;
         width: 230px;
         display: flex;
-        border: #f2f2f2 1px solid;
         font-weight: 600;
         font-size: 100%;
         appearance: none;
         background-color: $gray-medium;
-        padding: 1.25rem;
+        padding-left: 25px;
+        box-shadow: inset 0px 5px #dddddd;
       }
     
        input::placeholder {
@@ -59,7 +60,7 @@
       .map{
         display: flex;
         justify-content: center;
-        padding: 1.25rem;
+        padding-left: 20px;
         background-color: $gray-medium;
         font-size: 1.2rem;
         position: relative;

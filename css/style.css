@@ -187,7 +187,6 @@ section {
 }
 /*Heart*/
 .section-resto__hearts {
-  background: gradiant(1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -392,7 +391,6 @@ section {
 }
 /*Heart*/
 .section-resto__hearts {
-  background: gradiant(1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -446,7 +444,7 @@ section {
 .meal__confirmation {
   background-color: #99E2D0;
   color: #FFF;
-  font-size: rem(20);
+  font-size: 20px;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   width: 3.5rem;
@@ -527,7 +525,7 @@ section {
   flex-wrap: nowrap;
 }
 .bloc-card__title {
-  font-size: rem(18);
+  font-size: 18px;
   font-weight: 900;
   margin-bottom: 0;
 }
@@ -748,7 +746,6 @@ section {
 }
 /*Heart*/
 .section-resto__hearts {
-  background: gradiant(1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -1024,7 +1021,6 @@ section {
 }
 /*Heart*/
 .section-resto__hearts {
-  background: gradiant(1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -1144,29 +1140,30 @@ section {
   text-align: center;
 }
 .section-description h1 {
-  font-size: rem(24);
+  font-size: 24px;
   font-weight: 700;
-  margin-bottom: rem(20);
-  padding: 0 rem(40);
+  margin-bottom: 20px;
+  padding: 0 40px;
 }
 .section-description__p {
-  font-size: rem(18);
+  font-size: 18px;
   font-weight: 300;
-  margin-bottom: rem(30);
+  margin-bottom: 30px;
   padding: 0 22px;
   align-self: center;
   white-space: normal;
 }
 .section-description input {
+  border: transparent;
   height: 50px;
   width: 230px;
   display: flex;
-  border: #f2f2f2 1px solid;
   font-weight: 600;
   font-size: 100%;
   appearance: none;
   background-color: #EAEAEA;
-  padding: 1.25rem;
+  padding-left: 25px;
+  box-shadow: inset 0px 5px #dddddd;
 }
 .section-description input::placeholder {
   color: black;
@@ -1175,7 +1172,7 @@ section {
 .section-description .map {
   display: flex;
   justify-content: center;
-  padding: 1.25rem;
+  padding-left: 20px;
   background-color: #EAEAEA;
   font-size: 1.2rem;
   position: relative;
