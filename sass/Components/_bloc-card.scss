@@ -17,7 +17,7 @@
     }
 
     &__body {
-        padding: 10px;
+        padding: 10px 0px;
         @include flex(column, inherit, space-between, nowrap);
     }
 
@@ -30,12 +30,14 @@
     &__title h4 {
         margin:0;
         margin-top: 10px;
+        margin-left: 10px;
     }
 
     &__city {
         font-weight: 300;
         text-transform: capitalize;
        margin:0;
+       margin-left: 10px;
     }
 
     &__status {

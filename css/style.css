@@ -205,8 +205,8 @@ section {
   border-radius: 20px 20px 20px 20px;
   color: white;
   border: none;
-  width: 170px;
-  height: 40px;
+  width: 215px;
+  height: 50px;
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
 }
 .btn:hover, .btn-cmd:hover, .btn-exp:hover {
@@ -409,6 +409,8 @@ section {
   background: #FFF;
   border-radius: 10px;
   margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
   animation: plate-appear 750ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -427,6 +429,9 @@ section {
 .meal__title, .meal__composition {
   text-overflow: ellipsis;
   overflow: hidden;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .meal__title {
   font-weight: 900;
@@ -472,12 +477,12 @@ section {
 }
 @media only screen and (min-width: 768px) {
   .meal {
-    flex-basis: 32%;
+    flex-basis: 45%;
   }
 }
 @media only screen and (min-width: 992px) {
   .meal {
-    flex-basis: 32%;
+    flex-basis: 45%;
   }
 }
 
@@ -517,7 +522,7 @@ section {
   border-top-right-radius: 1rem;
 }
 .bloc-card__body {
-  padding: 10px;
+  padding: 10px 0px;
   display: flex;
   flex-direction: column;
   align-items: inherit;
@@ -532,11 +537,13 @@ section {
 .bloc-card__title h4 {
   margin: 0;
   margin-top: 10px;
+  margin-left: 10px;
 }
 .bloc-card__city {
   font-weight: 300;
   text-transform: capitalize;
   margin: 0;
+  margin-left: 10px;
 }
 .bloc-card__status {
   padding: 8px 12px;
@@ -1099,6 +1106,11 @@ section {
 
 .cmd {
   text-align: center;
+  margin-top: 40px;
+}
+
+.underline-title {
+  margin-left: 20px;
 }
 
 /*Mixin animation heart*/
@@ -1196,7 +1208,7 @@ section {
   .section-explorer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
   }
@@ -1276,11 +1288,12 @@ footer {
   font-weight: normal;
   font-size: 18px;
   text-transform: lowercase;
-  margin-left: 2px;
+  margin-left: 20px;
   margin-bottom: 10px;
 }
 
 li {
+  margin-left: 20px;
   margin-bottom: 10px;
 }
 li i {
