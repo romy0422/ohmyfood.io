@@ -14,10 +14,11 @@
         object-fit: cover;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
+    
     }
 
     &__body {
-        padding: 10px 0px;
+        padding-bottom: 10px;
         @include flex(column, inherit, space-between, nowrap);
     }
 
