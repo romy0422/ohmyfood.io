@@ -518,6 +518,8 @@ section {
   width: 100%;
   height: 120px;
   object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 .bloc-card__body {
   padding-bottom: 10px;
@@ -788,6 +790,7 @@ section {
 }
 .explorer__title {
   font-weight: 900;
+  padding-right: 10px;
 }
 .explorer__list {
   flex-direction: column;

@@ -12,11 +12,13 @@
 
     &__title {
         font-weight: 900;
+        padding-right: 10px;
     }
 
     &__list {
         flex-direction: column;
         padding-left: 10px;
+        
     }
 
     &__number {
